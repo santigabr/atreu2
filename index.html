@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Alojamiento Atreu</title>
+   <link rel="shortcut icon" href="images/icon.png" alt="icon">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<section class="header">
+
+   <div class="flex">
+      <a href="#home" class="logo">Atreu2</a>
+      <div id="menu-btn" class="fas fa-bars"></div>
+   </div>
+
+   <nav class="navbar">
+      <a href="#home">Inicio</a>
+      <a href="#availability">Consultar Disponibilidad</a>
+      <a href="#menu">Menu</a>
+      <a href="#ubicacion">Pehuen Co</a>
+      <a href="#alojamientos">Alojamientos</a>
+      <a href="#contact">Contacto</a>
+   </nav>
+
+</section>
+   
+<section class="home" id="home">
+
+   <div class="swiper home-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="box swiper-slide">
+            <img src="images/casa1.jpg" alt="">
+            <div class="flex">
+               <h3>Alojamientos Playero</h3>
+               <a href="#alojamientos" class="btn">ver mas</a>
+            </div>
+         </div>
+
+         <div class="box swiper-slide">
+            <img src="images/casa2.jpeg" alt="">
+            <div class="flex">
+               <h3>ubicado en pehuenco</h3>
+               <a href="#ubicacion" class="btn">saber mas</a>
+            </div>
+         </div>
+
+         <div class="box swiper-slide">
+            <img src="images/casa3.jpeg" alt="">
+            <div class="flex">
+               <h3>comida exquisita!</h3>
+               <a href="#menu" class="btn">ver menu</a>
+            </div>
+         </div>
+
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+   </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- availability section starts  -->
+
+<section class="availability" id="availability">
+   <h2 class="title">consultar disponibilidad</h2>
+
+   <form action="" method="post">
+      <div class="flex">
+         <div class="box">
+            <p>Llegada</p>
+            <input type="date" name="check_in" class="input" required>
+         </div>
+         <div class="box">
+            <p>Salida</p>
+            <input type="date" name="check_out" class="input" required>
+         </div>
+         <div class="box">
+            <p>Adultos </p>
+            <select name="adults" class="input" required>
+               <option value="1">1 Adulto</option>
+               <option value="2">2 Adultos</option>
+               <option value="3">3 Adultos</option>
+               <option value="4">4 Adultos</option>
+               <option value="5">5 Adultos</option>
+               <option value="6">6 Adultos</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>Niños </p>
+            <select name="childs" class="input" required>
+               <option value="-">Ninguno</option>
+               <option value="1">1 Niño</option>
+               <option value="2">2 Niños</option>
+               <option value="3">3 Niños</option>
+               <option value="4">4 Niños</option>
+               <option value="5">5 Niños</option>
+               <option value="6">6 Niños</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>Habitaciones </p>
+            <select name="rooms" class="input" required>
+               <option value="1">1 Habitacion</option>
+               <option value="2">2 Habitaciones</option>
+               <option value="3">3 Habitaciones</option>
+               <option value="4">4 Habitaciones</option>
+               <option value="5">5 Habitaciones</option>
+               <option value="6">6 Habitaciones</option>
+            </select>
+         </div>
+      </div>
+      <input type="submit" value="Consultar Disponibilidad" name="check" class="btn">
+   </form>
+
+</section>
+
+<!-- availability section ends -->
+
+<!-- about section starts  -->
+
+<section class="menu" id="menu">
+  <h2 class="title">menu</h2>
+  <div class="owl-carousel owl-theme">
+    <div>
+      <img src="images/empanadas.jpg" alt="empanadas"> 
+      <div class="details"><h2>Empanadas</h2></div>
+    </div>
+    <div> 
+      <img src="images/pizza.jpg" alt="pizza">
+      <div class="details"><h2>Pizza</h2></div>
+    </div>
+    <div> 
+      <img src="images/carne.jpg" alt="carne"> 
+      <div class="details"><h2>Carnes</h2></div>
+    </div>
+    <div> 
+      <img src="images/postres.jpg" alt="postres"> 
+      <div class="details"><h2>Postres</h2></div>
+    </div>
+  </div>
+</section>
+
+<section class="ubicacion" id="ubicacion">
+   <h2 class="title">Ubicacion</h2>
+   <div class="ubicacion"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12402.68486605289!2d-61.616667!3d-38.9999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95f2a157a53bd63b%3A0x1239090bdad7b22d!2sBalneario%20Pehu%C3%A9n-C%C3%B3%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1677707105434!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+</section>
+
+<section class="gallery" id="alojamientos">
+   <h2 class="title">Alojamiento</h2>
+   <h3>Nuestros alojamientos están totalmente equipados con mobiliario rústico, construidos con materiales nobles, en forma artesanal, salen de lo tradicional. Disponemos de alojamientos con capacidad desde 2 a 6 personas, hogar a leña, calefacción a leña y a gas, confortables sillones, ventanales panorámicos, mobiliario rústico artesanal, antebaño y baño completo con bañera de piedra (algunas), secador de cabello, cocina equipada con microondas, cafetera, tostadora eléctrica, DirecTV, servicio de WiFi, en el exterior parrilla, mesa, bancos, reposeras, sombrilla, etc. Para todos los alojamientos, Servicio de mucama y Servicio de comida.</h3>
+   <div class="swiper gallery-slider">
+      <div class="swiper-wrapper">
+         <img src="images/galeria1.jpg" class="swiper-slide" alt="">
+         <img src="images/galeria2.jpg" class="swiper-slide" alt="">
+         <img src="images/galeria3.jpg" class="swiper-slide" alt="">
+         <img src="images/galeria4.jpg" class="swiper-slide" alt="">
+      </div>
+      <div class="swiper-pagination"></div>
+   </div>
+
+</section>
+
+<!-- gallery section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+   <h2 class="title">Contacto</h2>
+
+   <div class="row">
+
+      <form action="" method="post">
+         <h3>Envianos un mensaje</h3>
+         <input type="text" name="name" required maxlength="50" placeholder="Nombre" class="box">
+         <input type="email" name="email" required maxlength="50" placeholder="Email" class="box">
+         <input type="number" name="number" required maxlength="10" min="0" max="9999999999" placeholder="Telefono" class="box">
+         <textarea name="msg" class="box" required maxlength="1000" placeholder="Mensaje" cols="30" rows="10"></textarea>
+         <input type="submit" value="Enviar" name="send" class="btn">
+      </form>
+
+   </div>
+
+</section>
+
+
+<section class="footer">
+
+   <div class="box-container">
+
+      <div class="box">
+         <a href="tel:+542994087116"><i class="fas fa-phone"></i> +542994087116</a>
+         <a href="mailto:arquitectogabrilco@gmail.com"><i class="fas fa-envelope"></i> arquitectogabrilco@gmail.com</a>
+         <a href="#"><i class="fas fa-map-marker-alt"></i> Neuquen, Neuquen, Argentina</a>
+      </div>
+
+      <div class="box">
+      <a href="#home">Inicio</a>
+      <a href="#availability">Consultar Disponibilidad</a>
+      <a href="#menu">Menu</a>
+      <a href="#ubicacion">Pehuen Co</a>
+      <a href="#alojamientos">Alojamientos</a>
+      <a href="#contact">Contacto</a>
+      </div>
+
+      <div class="box">
+         <a href="#">facebook <i class="fab fa-facebook-f"></i></a>
+         <a href="#">twitter <i class="fab fa-twitter"></i></a>
+         <a href="#">instagram <i class="fab fa-instagram"></i></a>
+         <a href="#">linkedin <i class="fab fa-linkedin"></i></a>
+      </div>
+
+   </div>
+
+   <div class="credit">&copy; copyright @ 2023 by Santino Gabrilco | todos los derechos reservados!</div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+
+<script>
+   var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            loop:true,
+            nav:true,
+            margin:10,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:2
+                },            
+                960:{
+                    items:3
+                },
+                1200:{
+                    items:3
+                }
+            }
+      });
+      owl.on('mousewheel', '.owl-stage', function (e) {
+          if (e.deltaY>0) {
+              owl.trigger('next.owl');
+          } else {
+              owl.trigger('prev.owl');
+          }
+          e.preventDefault();
+      });
+</script>
+
+</body>
+</html>
